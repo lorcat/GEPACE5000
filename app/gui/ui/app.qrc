@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>a_dw.png</file>
+    <file>a_up.png</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>736</width>
+    <height>418</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0" rowspan="3" colspan="2">
+    <widget class="QWidget" name="widget_4" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>100</width>
+       <height>20</height>
+      </size>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Step</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="0" colspan="3">
+       <widget class="QPushButton" name="pushButton">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Press to apply the desired value</string>
+        </property>
+        <property name="text">
+         <string>Apply</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0" colspan="3">
+       <widget class="QLineEdit" name="le_desiredsp">
+        <property name="toolTip">
+         <string>Desired pressure controller set point</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" colspan="3">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Current Set Point, bar</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="3">
+       <widget class="QLineEdit" name="le_sp">
+        <property name="minimumSize">
+         <size>
+          <width>75</width>
+          <height>35</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Current pressure controller set point</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0" colspan="3">
+       <widget class="QLineEdit" name="le_sp_step">
+        <property name="minimumSize">
+         <size>
+          <width>75</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Setpoint step</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="readOnly">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0" colspan="2">
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>Desired Set Point, bar</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="0">
+       <spacer name="verticalSpacer_4">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="7" column="0" colspan="3">
+       <widget class="QWidget" name="widget_5" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>75</width>
+          <height>0</height>
+         </size>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QPushButton" name="btn_spdw">
+           <property name="toolTip">
+            <string>Decrease a desired setpoint (press Apply to implement)</string>
+           </property>
+           <property name="text">
+            <string>Down</string>
+           </property>
+           <property name="icon">
+            <iconset resource="app.qrc">
+             <normaloff>:/icons/a_dw.png</normaloff>:/icons/a_dw.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>24</width>
+             <height>24</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_spup">
+           <property name="toolTip">
+            <string>Increase a desired setpoint (press Apply to implement)</string>
+           </property>
+           <property name="text">
+            <string>Up</string>
+           </property>
+           <property name="icon">
+            <iconset resource="app.qrc">
+             <normaloff>:/icons/a_up.png</normaloff>:/icons/a_up.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>24</width>
+             <height>24</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="4" column="3">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="4">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="0" column="2" rowspan="3">
+    <widget class="QWidget" name="widget_3" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>100</width>
+       <height>0</height>
+      </size>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="5" column="1">
+       <spacer name="verticalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="4" column="1">
+       <widget class="QPushButton" name="btn_slrtdw">
+        <property name="toolTip">
+         <string>Increase slew rate (applied immediately)</string>
+        </property>
+        <property name="text">
+         <string>Up</string>
+        </property>
+        <property name="icon">
+         <iconset resource="app.qrc">
+          <normaloff>:/icons/a_up.png</normaloff>:/icons/a_up.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>24</width>
+          <height>24</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Slewrate, bar</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <widget class="QLineEdit" name="le_slrt">
+        <property name="minimumSize">
+         <size>
+          <width>75</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Current slew rate</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QPushButton" name="btn_slrtup">
+        <property name="toolTip">
+         <string>Decrease slew rate (applied immediately)</string>
+        </property>
+        <property name="text">
+         <string>Down</string>
+        </property>
+        <property name="icon">
+         <iconset resource="app.qrc">
+          <normaloff>:/icons/a_dw.png</normaloff>:/icons/a_dw.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>24</width>
+          <height>24</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Step</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0" colspan="2">
+       <widget class="QLineEdit" name="le_slrt_step">
+        <property name="minimumSize">
+         <size>
+          <width>75</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Slewrate step</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="readOnly">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="3" rowspan="3">
+    <widget class="QWidget" name="widget" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>200</width>
+       <height>300</height>
+      </size>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_4">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>Press. Controller State</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLineEdit" name="le_control_state">
+        <property name="minimumSize">
+         <size>
+          <width>75</width>
+          <height>35</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Pressure controller state</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QWidget" name="widget_2" native="true">
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <property name="margin">
+          <number>4</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="btn_control_start">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>Starts operation of the pressure controller</string>
+           </property>
+           <property name="text">
+            <string>Start</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_control_stop">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>Stops operation of the pressure controller</string>
+           </property>
+           <property name="text">
+            <string>Stop</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>le_sp</tabstop>
+  <tabstop>le_slrt</tabstop>
+  <tabstop>le_control_state</tabstop>
+  <tabstop>le_desiredsp</tabstop>
+  <tabstop>le_sp_step</tabstop>
+  <tabstop>btn_spdw</tabstop>
+  <tabstop>btn_spup</tabstop>
+  <tabstop>pushButton</tabstop>
+  <tabstop>le_slrt_step</tabstop>
+  <tabstop>btn_slrtup</tabstop>
+  <tabstop>btn_slrtdw</tabstop>
+  <tabstop>btn_control_start</tabstop>
+  <tabstop>btn_control_stop</tabstop>
+ </tabstops>
+ <resources>
+  <include location="app.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>btn_spdw</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>actionSPDw()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>73</x>
+     <y>163</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>90</x>
+     <y>-7</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_spup</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>actionSPUp()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>145</x>
+     <y>165</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>172</x>
+     <y>2</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>actionApplySetPoint()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>122</x>
+     <y>219</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>105</x>
+     <y>320</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>le_desiredsp</sender>
+   <signal>returnPressed()</signal>
+   <receiver>Form</receiver>
+   <slot>actionApplySetPoint()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>118</x>
+     <y>89</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>143</x>
+     <y>318</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_slrtup</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>actionSlrtDw()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>232</x>
+     <y>114</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>259</x>
+     <y>3</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_slrtdw</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>actionSlrtUp()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>359</x>
+     <y>132</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>366</x>
+     <y>-2</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_control_start</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>actionStartControl()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>456</x>
+     <y>78</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>471</x>
+     <y>5</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_control_stop</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>actionStopControl()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>536</x>
+     <y>115</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>578</x>
+     <y>2</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>actionStartControl()</slot>
+  <slot>actionStopControl()</slot>
+  <slot>actionSPUp()</slot>
+  <slot>actionSPDw()</slot>
+  <slot>actionSlrtUp()</slot>
+  <slot>actionSlrtDw()</slot>
+  <slot>actionApplySetPoint()</slot>
+ </slots>
+</ui>

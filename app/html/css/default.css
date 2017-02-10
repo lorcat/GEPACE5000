@@ -1,0 +1,36 @@
+/* --------------------------------------------------------
+Style Sheet for P02.2 Reader application
+
+version: 1.0
+last modified: -
+author: Konstantin Glazyrin
+email: konstantin.glazyrin@desy.de
+----------------------------------------------------------*/
+
+html {}
+body {font-family: Arial, Tahoma; font-size: 1em; }
+
+
+div.left {float: left;}
+div.right {float: right;}
+
+/* holder part - to hold numbers*/
+div.holder {margin-right: 5px;}
+
+div.holder .header {font-size: 0.8em; font-weight: bold; background: #eee; padding: 5px 5px 5px 5px; text-align: center;}
+div.holder .data {font-size: 1.1em; font-weight: normal; background: #ecc; padding: 5px 5px 5px 5px; text-align: center;}
+
+div.holder .pressure .header {font-size: 0.8em; font-weight: bold; background: #fee; padding: 5px 5px 5px 5px; text-align: center;}
+div.holder .pressure .data {font-size: 1.1em; font-weight: normal; background: #fee; padding: 5px 5px 5px 5px; text-align: center;}
+
+div.holder .setpoint .header {font-size: 0.8em; font-weight: bold; background: #cfe; padding: 5px 5px 5px 5px; text-align: center;}
+div.holder .setpoint .data {font-size: 1.1em; font-weight: normal; background: #cfe; padding: 5px 5px 5px 5px; text-align: center;}
+
+div.holder .inlet .header {font-size: 0.8em; font-weight: bold; background: #efe; padding: 5px 5px 5px 5px; text-align: center;}
+div.holder .inlet .data {font-size: 1.1em; font-weight: normal; background: #efe; padding: 5px 5px 5px 5px; text-align: center;}
+
+div.holder .slewratemode .header {font-size: 0.8em; font-weight: bold; background: #cef; padding: 5px 5px 5px 5px; text-align: center;}
+div.holder .slewratemode .data {font-size: 1.1em; font-weight: normal; background: #cef; padding: 5px 5px 5px 5px; text-align: center;}
+
+div.holder .slewrate .header {font-size: 0.8em; font-weight: bold; background: #eef; padding: 5px 5px 5px 5px; text-align: center;}
+div.holder .slewrate .data {font-size: 1.1em; font-weight: normal; background: #eef; padding: 5px 5px 5px 5px; text-align: center;}

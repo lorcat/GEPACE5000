@@ -1,0 +1,82 @@
+QWidget {background-color: #fff;}
+QLineEdit {height: 30px; border: 0px; font-size: 12px Arial; font-weight:bold; border-bottom: 1px solid #777; padding-top: 3px; padding-bottom: 3px; cursor: hand;}
+QPushButton {border: 0px; font-weight:bold; background-color: #fafafa; padding: 5 10 5 10; border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: #ccc;}
+QPushButton:hover {background-color: #eee; color: #777;}
+QPushButton:pressed {background-color: #efe; color: #777;}
+
+QPushButton#btn_control_stop {background-color: #a33; color: #fff;}
+QPushButton#btn_control_stop:hover {background-color: #c66; }
+QPushButton#btn_control_stop:hover:pressed {background-color: #efe; color: #777;}
+
+QPushButton#btn_control_start {background-color: #3a3; color: #fff;}
+QPushButton#btn_control_start:hover {background-color: #6c6; }
+QPushButton#btn_control_start:hover:pressed {background-color: #efe; color: #777;}
+
+QPushButton#btn_decompress {background-color: #33a; color: #fff;}
+QPushButton#btn_decompress:hover {background-color: #66a; }
+QPushButton#btn_decompress:hover:pressed {background-color: #efe; color: #777;}
+
+QLineEdit#le_sp {background-color: #eee; font-size: 14px; height: 35px;}
+QLineEdit#le_desiredsp {background-color: #fafafa; }
+
+QLineEdit#le_control_state {background-color: #fee; font-size: 14px; height: 35px;}
+
+QMenu {background-color: #fff;}
+
+QTabWidget { /* The tab widget frame */
+    font-size: 14px;
+	font-weight: bold;
+}
+
+QTabWidget::pane { /* The tab widget frame */
+    border-top: 3px solid #acc;
+	border-bottom: 3px solid #acc;
+}
+
+QTabBar::tab {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,
+                                stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);
+    border: 0px solid #C4C4C3;
+    border-bottom-color: #C2C7CB; /* same as the pane color */
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    min-width: 8ex;
+    padding: 2px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	width: 100px;
+}
+
+QTabBar::tab:selected, QTabBar::tab:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #fafafa, stop: 0.4 #f4f4f4,
+                                stop: 0.5 #e7e7e7, stop: 1.0 #fafafa);
+
+}
+
+QTabBar::tab:selected {
+	margin-left: 2px;
+	margin-right: 2px;
+    background-color: #acc;
+}
+
+QTabBar::tab:!selected {
+    margin-top: 2px; /* make non-selected tabs look smaller */
+	background-color: #cdd;
+	margin-top: 3px;
+	font-color: #777;
+}
+
+QTabBar::tab:first:selected {
+    margin-left: 5px; /* the first selected tab has nothing to overlap with on the left */
+}
+
+QTabBar::tab:first {
+    margin-left: 5px; /* the first selected tab has nothing to overlap with on the left */
+}

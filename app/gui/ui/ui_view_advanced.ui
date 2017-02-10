@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>541</width>
+    <height>289</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="0" colspan="2">
+    <widget class="QLineEdit" name="le_overshoot">
+     <property name="minimumSize">
+      <size>
+       <width>75</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string>Current value of Overshoot parameter</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2" colspan="2">
+    <widget class="QLabel" name="label_5">
+     <property name="text">
+      <string>Slewrate Mode</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2" colspan="2">
+    <widget class="QLineEdit" name="le_slrtmode">
+     <property name="minimumSize">
+      <size>
+       <width>75</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string>Current value of SlewRateMode parameter</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Overshoot</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2" colspan="2">
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <property name="margin">
+       <number>4</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="btn_slrtmode_max">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>24</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Sets the SlewrateMode to MAX value (controller operates with maximum slew rate, SlewRate parameter is ignored)</string>
+        </property>
+        <property name="text">
+         <string>Max</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_slrtmode_linear">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>24</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Sets the SlewrateMode to LINEAR value (controller operates a constant SlewRate)</string>
+        </property>
+        <property name="text">
+         <string>Linear</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="2">
+    <widget class="QWidget" name="widget_2" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="btn_overshoot_on">
+        <property name="toolTip">
+         <string>Sets the Overshoot parameter to ON state</string>
+        </property>
+        <property name="text">
+         <string>On</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>24</width>
+          <height>24</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_overshoot_off">
+        <property name="toolTip">
+         <string>Sets the Overshoot parameter to OFF state</string>
+        </property>
+        <property name="text">
+         <string>Off</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>24</width>
+          <height>24</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="4">
+    <spacer name="horizontalSpacer_3">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="3" column="0" colspan="5">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>le_overshoot</tabstop>
+  <tabstop>le_slrtmode</tabstop>
+  <tabstop>btn_overshoot_on</tabstop>
+  <tabstop>btn_overshoot_off</tabstop>
+  <tabstop>btn_slrtmode_max</tabstop>
+  <tabstop>btn_slrtmode_linear</tabstop>
+ </tabstops>
+ <resources>
+  <include location="app.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>btn_overshoot_on</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>actionOvershootOn()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>60</x>
+     <y>75</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>67</x>
+     <y>-8</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_overshoot_off</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>actionOvershootOff()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>148</x>
+     <y>72</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>166</x>
+     <y>2</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_slrtmode_max</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>actionSlewrateMax()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>274</x>
+     <y>72</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>304</x>
+     <y>-2</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_slrtmode_linear</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>actionSlewrateLinear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>385</x>
+     <y>75</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>435</x>
+     <y>-3</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>actionOvershootOn()</slot>
+  <slot>actionOvershootOff()</slot>
+  <slot>actionSlewrateMax()</slot>
+  <slot>actionSlewrateLinear()</slot>
+ </slots>
+</ui>

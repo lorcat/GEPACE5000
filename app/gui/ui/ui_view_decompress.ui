@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>541</width>
+    <height>289</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="2" column="2" rowspan="4" colspan="2">
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="margin">
+       <number>4</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="btn_decompress">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Starts decompression (decompression rate is copied to the slew rate)</string>
+        </property>
+        <property name="text">
+         <string>Decompress</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_control_stop">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Stops operation of the pressure controller</string>
+        </property>
+        <property name="text">
+         <string>Stop</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="3" column="0" colspan="2">
+    <widget class="QLineEdit" name="le_slrt_step">
+     <property name="minimumSize">
+      <size>
+       <width>75</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string>Decompression rate step</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="4">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="0" colspan="2">
+    <widget class="QLineEdit" name="le_slrt">
+     <property name="minimumSize">
+      <size>
+       <width>75</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string>Current value of the decompression slewrate</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2" colspan="2">
+    <widget class="QLabel" name="label_5">
+     <property name="text">
+      <string>Press. Controller State</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2" colspan="2">
+    <widget class="QLineEdit" name="le_control_state">
+     <property name="minimumSize">
+      <size>
+       <width>75</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string>Pressure controller state</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>Step</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Decompr. slewrate, bar/min</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="2">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="4" column="0">
+    <widget class="QWidget" name="widget_2" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="btn_slrtdw">
+        <property name="toolTip">
+         <string>Decrease decompression slew rate (applied immediately)</string>
+        </property>
+        <property name="text">
+         <string>Down</string>
+        </property>
+        <property name="icon">
+         <iconset resource="app.qrc">
+          <normaloff>:/icons/a_dw.png</normaloff>:/icons/a_dw.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>24</width>
+          <height>24</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_slrtup">
+        <property name="toolTip">
+         <string>Increase decompression slew rate (applied immediately)</string>
+        </property>
+        <property name="text">
+         <string>Up</string>
+        </property>
+        <property name="icon">
+         <iconset resource="app.qrc">
+          <normaloff>:/icons/a_up.png</normaloff>:/icons/a_up.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>24</width>
+          <height>24</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>le_slrt</tabstop>
+  <tabstop>le_control_state</tabstop>
+  <tabstop>le_slrt_step</tabstop>
+  <tabstop>btn_decompress</tabstop>
+  <tabstop>btn_control_stop</tabstop>
+ </tabstops>
+ <resources>
+  <include location="app.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>btn_decompress</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>actionDecompress()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>233</x>
+     <y>75</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>258</x>
+     <y>-5</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_control_stop</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>actionStopControl()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>220</x>
+     <y>128</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>391</x>
+     <y>-4</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_slrtup</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>actionSlrtUp()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>148</x>
+     <y>117</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>161</x>
+     <y>-9</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_slrtdw</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>actionSlrtDw()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>76</x>
+     <y>117</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>99</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>actionSlrtUp()</slot>
+  <slot>actionSlrtDw()</slot>
+  <slot>actionDecompress()</slot>
+  <slot>actionStopControl()</slot>
+ </slots>
+</ui>
