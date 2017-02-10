@@ -86,13 +86,13 @@ class ReaderController(qtcore.QObject, Tester):
         # stop timer
         self.stopReader()
 
-        # delete object
-        self._reader.deleteLater()
-
         # delete thread
         if self._runner.isRunning():
             self._runner.terminate()
             self._runner.wait(self.DEFAULT_THREAD_TIMEOUT)
+
+        # delete object
+        self._reader.deleteLater()
 
     def processThreadStart(self):
         self.debug("Reading Thread has started")
