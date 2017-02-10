@@ -2,6 +2,7 @@ from app.load import *
 from app.load.load_config import *
 
 from app.starter import *
+from app.custom_app import *
 
 #name of the file - used to prepare configuration
 FILE = __file__
@@ -31,7 +32,7 @@ def main():
     Main application file
     :return:
     """
-    app = qtgui.QApplication(sys.argv)
+    app = CustomApplication(sys.argv)
 
     # update resources path
     prepare_resources()
@@ -47,3 +48,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+# @TODO: Qt has caught an exception thrown from an event handler. Throwing  exceptions from an event handler is not supported in Qt. You must  reimplement QApplication::notify() and catch all exceptions there.
