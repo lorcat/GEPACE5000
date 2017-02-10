@@ -159,13 +159,13 @@ class Reader(qtcore.QObject, Tester):
         :return:
         """
 
-        self.info("Starting reading action")
+        self.debug("Starting reading action")
 
         # try mutex lock - if not posible return
         btest = self.tryLock()
 
         if btest:
-            self.info("Obtained lock - reading operation has started")
+            self.debug("Obtained lock - reading operation has started")
 
             # read data
             self.read()
@@ -173,7 +173,7 @@ class Reader(qtcore.QObject, Tester):
             # don't forget to unlock the mutex
             self.unlock()
         else:
-            self.info("Lock was not obtained - try to adjust the polling period.")
+            self.error("Lock was not obtained - try to adjust the polling period.")
         return
 
     def unlock(self):
